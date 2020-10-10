@@ -31,7 +31,7 @@
 
 ## Questions
   none <br />
-  ![User Profile Image](https://github.com/jleong20.png)
+  ![User Profile Image](https://github.com/jleong20.png) <br />
   jerry.leong20@gmail.com
   
   
