@@ -1,10 +1,11 @@
 const inquirer = require("inquirer");
 const util = require("util");
-var fs = require('fs');
+const fs = require('fs');
 const writeFileAsync = util.promisify(fs.writeFile);
 var generateMD = require("./utils/generateMarkdown");
 const questions = [
     "what is your github user? ",
+    "what is your email? ",
     "what is the title of your readme? ",
     "type a short description: ",
     "what do you need for installation? ",
@@ -21,28 +22,33 @@ inquirer.prompt([
         name: "username"
     },
     {
-        type:"input",
+        type: "input",
         message:questions[1],
+        name: "email"
+    },
+    {
+        type:"input",
+        message:questions[2],
         name: "title"
     },
     {   
         type:"input",
-        message:questions[2],
+        message:questions[3],
         name:"desciption"
     },
     {
         type:"input",
-        message:questions[3],
+        message:questions[4],
         name:"installation"
     },
     {
         type:"input",
-        message:questions[4],
+        message:questions[5],
         name:"usage"
     },
     {
         type:"list",
-        message:questions[5],
+        message:questions[6],
         name:"license",
         choices:[
             "MIT",
@@ -54,24 +60,23 @@ inquirer.prompt([
     },
     {
         type:"input",
-        message:questions[6],
+        message:questions[7],
         name:"contributors"
     },
     {
         type:"input",
-        message:questions[7],
+        message:questions[8],
         name:"tests"
     },
     {
         type:"input",
-        message:questions[8],
+        message:questions[9],
         name:"questions"
     }
 ]).then(function(data){
-    console.log(data);
+    //console.log(data);
     const markdown = generateMD(data);
     return writeFileAsync("README.md", markdown);
-
 }).then(function() {
     console.log("Successfully wrote to README.md");
   })

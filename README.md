@@ -1,10 +1,10 @@
 
-# le
+# readme-generator
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
 ## Description
-  no
+  create a new markdown file called readme.md
 
 ## Table of Contents
 * [Installation](#installation)
@@ -15,19 +15,23 @@
 * [Questions](#Questions)
 
 ## Installation
-  yes
+  none
 
 ## Usage
-  ao
+  creates a new markdown file for readme
 
 ## License
   MIT License
 
 ## Contributing
-  undefined
+  jerry leong
 
 ## Tests
-  ld
+  none
 
 ## Questions
-  al
+  none <br />
+  ![User Profile Image](https://github.com/jleong20.png)
+  jerry.leong20@gmail.com
+  
+  

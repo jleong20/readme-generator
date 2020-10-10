@@ -25,13 +25,17 @@ function generateMarkdown(data) {
   ${data.license} License
 
 ## Contributing
-  ${data.contributing}
+  ${data.contributors}
 
 ## Tests
   ${data.tests}
 
 ## Questions
-  ${data.questions}
+  ${data.questions} <br />
+  ![User Profile Image](https://github.com/${data.username}.png)
+  ${data.email}
+  
+  
 `;
 }
 
